@@ -1,3 +1,25 @@
-.tes {
-  border: black 1px solid;
+.jumbotron {
+  padding: 6rem 0 0;
+  background-color: #e2edff;
+}
+
+/* .footer {
+  margin-top: -100px;
+} */
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.container .moreAbout {
+  margin-top: 100px;
+}
+
+.container .moreAbout img {
+  width: auto;
+  height: 300px;
 }
