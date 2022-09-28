@@ -82,6 +82,7 @@ section {
 }
 
 .from-left {
+  overflow: hidden;
   transform: translateX(-50%);
   opacity: 0;
   transition: transform 500ms ease-in-out, opacity 500ms ease-in;
@@ -93,6 +94,7 @@ section {
 }
 
 .from-right {
+  overflow: hidden;
   transform: translateX(50%);
   opacity: 0;
   transition: transform 500ms ease-in-out, opacity 500ms ease-in;
@@ -117,7 +119,7 @@ section {
 } */
 
 .object {
-  width: 20rem;
+  width: 23rem;
 }
 
 .zoom-in {
