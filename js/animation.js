@@ -15,8 +15,12 @@ function animation() {
       if (!entry.isIntersecting) {
         return;
       } else {
-        console.log(entry);
+        console.log(entry.target);
         entry.target.classList.add("appear");
+        if (entry.target.classList.contains("no-card")) {
+          entry.target.classList.add("card");
+        }
+
         appearOnScroll.unobserve(entry.target);
       }
     });

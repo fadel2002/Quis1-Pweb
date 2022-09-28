@@ -57,12 +57,6 @@ $(document).ready(function () {
   // });
 });
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbxc6lRZLug4MaHkxFmO46HvhS5vXdsFqS7PYUS9Qol96_sznTm64CeHAotek3EEOiId/exec";
-const form = document.forms["submit-to-google-sheet"];
-const btnKirim = document.querySelector(".btn-kirim");
-const btnLoading = document.querySelector(".btn-loading");
-const kirimSuksesAlert = document.querySelector(".kirim-sukses-alert");
-
 // $(document).bind("click", function () {
 //   if (isMainRoute(window.location.pathname) && !$(".return-item").hasClass("d-none")) {
 //     $(".return-item").addClass("d-none");

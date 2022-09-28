@@ -1,3 +1,12 @@
+.svg-background-blue {
+  background-image: url("/svg/background-light-blue-wave.svg");
+  background-size: 120rem;
+}
+.svg-background-white {
+  background-image: url("/svg/background-scattered-forcefields.svg");
+  background-size: 20rem;
+}
+
 .jumbotron {
   padding: 6rem 0 0;
   background-color: #e2edff;
@@ -13,11 +22,11 @@
 } */
 
 #projects {
-  background-color: #e2edff;
+  background-color: #dae6fb;
 }
 
 .blue-footer {
-  background-color: #e2edff;
+  background-color: #dae6fb;
 }
 
 section {
@@ -72,38 +81,74 @@ section {
   opacity: 1;
 }
 
+.from-left {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in;
+}
+
+.from-left.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-right {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in;
+}
+
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .from-bottom.appear.bounce {
+  transition: transform 500ms ease-in-out, opacity 800ms ease-in;
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1.5s; /* don't forget to set a duration! */
 }
+
+/* .widening-to-bottom {
+
+}
+.widening-to-bottom.appear {
+
+} */
 
 .object {
   width: 20rem;
 }
 
+.zoom-in {
+  transition: 1s ease;
+  z-index: 1;
+}
+
 @media only screen and (min-width: 766px) {
-  .zoom-in {
-    transition: 1s ease;
+  .object {
+    width: 30rem;
   }
 
   .zoom-in:hover {
     transform: scale(1.2);
     transform-origin: top left;
-    z-index: 1;
+    z-index: 2;
     object-fit: cover;
   }
 
   .zoom-in-left:hover {
     transform-origin: top right;
   }
-
-  .object {
-    width: 30rem;
-  }
 }
 
 .card {
   height: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3;
 }
 
 .carousel-control-prev-icon {
