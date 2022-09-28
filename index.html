@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -27,22 +28,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto return-page">
               <li class="nav-item">
-                <a class="nav-link active selected-item" aria-current="page" href="/quis1" onclick="route()">Home</a>
+                <a class="nav-link selected-item menu home" aria-current="page" href="/quis1" onclick="route()">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link selected-item" href="/quis1/profile" onclick="route()">Profile</a>
+                <a class="nav-link selected-item menu profile" href="/quis1/profile" onclick="route()">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link selected-item" href="/quis1/hometown" onclick="route()">Hometown</a>
+                <a class="nav-link selected-item menu hometown" href="/quis1/hometown" onclick="route()">Hometown</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link selected-item" href="/quis1/food" onclick="route()">Food</a>
+                <a class="nav-link selected-item menu food" href="/quis1/food" onclick="route()">Food</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link selected-item" href="/quis1/tourist" onclick="route()">Tourist</a>
-              </li>
-              <li class="nav-item return-item d-none">
-                <a class="nav-link active" href="/quis1/profile" onclick="route()">Back</a>
+                <a class="nav-link selected-item menu tourist" href="/quis1/tourist" onclick="route()">Tourist</a>
               </li>
             </ul>
           </div>
@@ -57,6 +55,10 @@
       </nav> -->
       <div id="main-page"></div>
     </div>
+    <!-- Footer -->
+    <footer class="footer text-black text-center pb-1">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/pmfadel/" class="text-black fw-bold">Fadel Pramaputra Maulana</a></p>
+    </footer>
 
     <script src="/js/router.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -65,5 +67,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/animation.js"></script>
   </body>
 </html>

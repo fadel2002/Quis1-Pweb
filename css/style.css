@@ -3,11 +3,20 @@
   background-color: #e2edff;
 }
 
+.borderr {
+  border: black solid 3px;
+  /* text-align: left; */
+}
+
 /* .footer {
   margin-top: -100px;
 } */
 
 #projects {
+  background-color: #e2edff;
+}
+
+.blue-footer {
   background-color: #e2edff;
 }
 
@@ -23,3 +32,91 @@ section {
   width: auto;
   height: 300px;
 }
+
+.menu:hover {
+  font-size: large;
+}
+
+.menu {
+  transition: 0.15s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-top {
+  transform: translateY(-30%);
+  opacity: 0;
+  transition: transform 500ms ease-in, opacity 500ms ease-in;
+}
+
+.from-top.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.from-bottom {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in;
+}
+
+.from-bottom.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.from-bottom.appear.bounce {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+.object {
+  width: 20rem;
+}
+
+@media only screen and (min-width: 766px) {
+  .zoom-in {
+    transition: 1s ease;
+  }
+
+  .zoom-in:hover {
+    transform: scale(1.2);
+    transform-origin: top left;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .zoom-in-left:hover {
+    transform-origin: top right;
+  }
+
+  .object {
+    width: 30rem;
+  }
+}
+
+.card {
+  height: 100%;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  top: 20px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  top: 20px;
+}
+
+/* img {
+  width: 100%;
+  object-fit: cover;
+} */
