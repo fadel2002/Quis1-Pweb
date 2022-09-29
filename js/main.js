@@ -9,7 +9,7 @@ isMainRoute = (str) => {
   return false;
 };
 
-var blueFooterRoute = ["/quis1/profile/more-about", "/quis1/profile", "/quis1", "/"];
+var blueFooterRoute = ["/quis1/profile", "/quis1", "/"];
 
 isBlueFooter = (str) => {
   for (let i = 0; i < blueFooterRoute.length; i++) {

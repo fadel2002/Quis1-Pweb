@@ -11,7 +11,6 @@ const routes = {
   "/": "/pages/home/index.html",
   "/quis1": "/pages/home/index.html",
   "/quis1/profile": "/pages/profile/index.html",
-  "/quis1/profile/more-about": "/pages/profile/moreAbout.html",
   "/quis1/hometown": "/pages/hometown/index.html",
   "/quis1/food": "/pages/food/index.html",
   "/quis1/tourist": "/pages/tourist/index.html",

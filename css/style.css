@@ -62,7 +62,7 @@ section {
 .from-top {
   transform: translateY(-30%);
   opacity: 0;
-  transition: transform 500ms ease-in, opacity 500ms ease-in;
+  transition: transform 500ms ease-in, opacity 1000ms ease-in;
 }
 
 .from-top.appear {
@@ -127,6 +127,30 @@ section {
   z-index: 1;
 }
 
+.hometown {
+  width: 90%;
+}
+
+.downed {
+  transition: 1s ease;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 766px) {
+  .down:hover + .downed {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .down:hover + .downed {
+    padding-top: 120px;
+  }
+}
+
 @media only screen and (min-width: 766px) {
   .object {
     width: 30rem;
@@ -141,6 +165,14 @@ section {
 
   .zoom-in-left:hover {
     transform-origin: top right;
+  }
+
+  .center:hover {
+    transform-origin: center top;
+  }
+
+  .hometown {
+    width: 70%;
   }
 }
 
