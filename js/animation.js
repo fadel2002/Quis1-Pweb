@@ -1,4 +1,4 @@
-const myInterval = setInterval(animation, 200);
+const animationInterval = setInterval(animation, 200);
 
 function animation() {
   if (document.readyState === "complete") {
@@ -35,6 +35,6 @@ function animation() {
       appearOnScroll.observe(slider);
     });
 
-    clearInterval(myInterval);
+    clearInterval(animationInterval);
   }
 }

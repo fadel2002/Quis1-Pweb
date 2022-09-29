@@ -1,5 +1,5 @@
 if (window.location.pathname == "/quis1" || window.location.pathname == "/") {
-  const myInterval = setInterval(submitToGoogleSheet, 200);
+  const formInterval = setInterval(submitToGoogleSheet, 200);
 
   function submitToGoogleSheet() {
     if (document.readyState === "complete") {
@@ -28,7 +28,7 @@ if (window.location.pathname == "/quis1" || window.location.pathname == "/") {
           .catch((error) => console.error("Error!", error.message));
       });
 
-      clearInterval(myInterval);
+      clearInterval(formInterval);
     }
   }
 }
