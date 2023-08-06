@@ -4,6 +4,10 @@
   status = 200
 
 [[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+[[headers]]
   for = "/img/*"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
